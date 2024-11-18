@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration>Release</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{49a2d167-8883-414d-b64a-1b5b66e3c3b0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MyRootNamespace</RootNamespace>
+    <AssemblyName>MyAssemblyName</AssemblyName>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <FirstPage>Start.aspx</FirstPage>
+    <CustomSearch>0</CustomSearch>
+    <Deploy>1</Deploy>
+    <DeployPath>c:\inetpub\wwwroot\Evolution\ScriptServer\Scripts</DeployPath>
+    <RemoteService>https://bysidecarevo.webersolutions.es/Evolution/DeveloperService/DeveloperService.svc</RemoteService>
+    <UserName>nmartins</UserName>
+    <UserPassword>0x33E9F6D231D8A60DD1F118FFF8A72FC9</UserPassword>
+    <Name>Bysidecar_Repsol_Clientes_Top Data</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>
+    </OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\Attachments\" />
+    <Folder Include="Resources\css" />
+    <Folder Include="Resources\images" />
+    <Folder Include="Resources\js" />
+    <Folder Include="Resources\js\Prototype" />
+    <Folder Include="Resources\js\Prototype\1.5.0" />
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Data\Logs" />
+    <Folder Include="Resources\fonts" />
+    <Folder Include="Resources\Templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Alta.aspx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\CKEditor.NET.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\ComunICR.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\Evolution.Core.Async.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\Evolution.Platform.Core.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\Evolution.Types.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\Evolution.TZ.Services.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\EvolutionLibrary.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\EvolutionLibrary.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\HtmlEditor.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\Newtonsoft.Json.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\OpenPop.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\RestSharp.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\ScriptServer.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\System.Reactive.Core.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\System.Reactive.Interfaces.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\System.Reactive.Linq.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\System.Reactive.PlatformServices.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\Twitterizer2.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bin\VisualEvolutionLibrary.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Cliente.aspx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Default.aspx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Resources\css\AdminLTE.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Resources\css\ionicons.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Resources\css\_all-skins.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Resources\fonts\fontawesome-webfont.eot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Resources\fonts\fontawesome-webfont.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Resources\fonts\fontawesome-webfont.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Resources\fonts\fontawesome-webfont.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Resources\fonts\fontawesome-webfont.woff2">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Resources\fonts\FontAwesome.otf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Resources\js\adminlte.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Resources\js\bootstrap.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Resources\js\jquery-ui.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Resources\js\jquery.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Resources\js\jquery.slimscroll.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Resources\js\validanif.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Resources\js\Script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Start.aspx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Web.config">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Global.asax">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Rellamadas.aspx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Site.Master">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Resources\css\Script.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Resources\css\bootstrap.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Resources\css\font-awesome.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Resources\css\Basico.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Resources\images\bar_bk.gif">
+      <SubType>None</SubType>
+    </Content>
+    <Content Include="Resources\images\bg-blau.gif">
+      <SubType>None</SubType>
+    </Content>
+    <Content Include="Resources\images\bg-blau-btn.gif">
+      <SubType>None</SubType>
+    </Content>
+    <Content Include="Resources\images\bg-but-left-on.gif">
+      <SubType>None</SubType>
+    </Content>
+    <Content Include="Resources\images\bg-but-right-on.gif">
+      <SubType>None</SubType>
+    </Content>
+    <Content Include="Resources\images\bg-button-left.gif">
+      <SubType>None</SubType>
+    </Content>
+    <Content Include="Resources\images\bg-button-right.gif">
+      <SubType>None</SubType>
+    </Content>
+    <Content Include="Resources\images\bg-negro.gif">
+      <SubType>None</SubType>
+    </Content>
+    <Content Include="Resources\images\bg-negro-btn.gif">
+      <SubType>None</SubType>
+    </Content>
+    <Content Include="Resources\images\ico-update.gif">
+      <SubType>None</SubType>
+    </Content>
+    <Content Include="Resources\images\ToRight.gif">
+      <SubType>None</SubType>
+    </Content>
+    <Content Include="Resources\js\Prototype\1.5.0\prototype.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Resources\js\iagent.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Resources\js\agentapi.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Resources\Templates\sample_template.htm">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Resources\Templates\sample_template.txt">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="App_Data\Logs\readme.txt">
+      <SubType>None</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ComunICR, Version=1.0.1005.0, Culture=neutral, PublicKeyToken=d40590f88448d085">
+      <Name>ComunICR</Name>
+      <AssemblyName>comunicr.dll</AssemblyName>
+      <HintPath>bin\comunicr.dll</HintPath>
+    </Reference>
+    <Reference Include="Evolution.Core.Async, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d40590f88448d085">
+      <Name>Evolution.Core.Async</Name>
+      <AssemblyName>evolution.core.async.dll</AssemblyName>
+      <HintPath>bin\evolution.core.async.dll</HintPath>
+    </Reference>
+    <Reference Include="Evolution.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d40590f88448d085">
+      <Name>Evolution.Types</Name>
+      <AssemblyName>evolution.types.dll</AssemblyName>
+      <HintPath>bin\evolution.types.dll</HintPath>
+    </Reference>
+    <Reference Include="Evolution.TZ.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <Name>Evolution.TZ.Services</Name>
+      <AssemblyName>evolution.tz.services.dll</AssemblyName>
+      <HintPath>bin\evolution.tz.services.dll</HintPath>
+    </Reference>
+    <Reference Include="EvolutionLibrary, Version=1.0.1005.0, Culture=neutral, PublicKeyToken=null">
+      <Name>EvolutionLibrary</Name>
+      <AssemblyName>evolutionlibrary.dll</AssemblyName>
+      <HintPath>bin\evolutionlibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ScriptServer, Version=1.0.1001.0, Culture=neutral, PublicKeyToken=null">
+      <Name>ScriptServer</Name>
+      <AssemblyName>scriptserver.dll</AssemblyName>
+      <HintPath>bin\scriptserver.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualEvolutionLibrary, Version=1.0.1003.0, Culture=neutral, PublicKeyToken=null">
+      <Name>VisualEvolutionLibrary</Name>
+      <AssemblyName>visualevolutionlibrary.dll</AssemblyName>
+      <HintPath>bin\visualevolutionlibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\ICR\Developer.NET\Developer.NET.targets" />
+</Project>

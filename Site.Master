@@ -1,0 +1,101 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" %>
+
+<!DOCTYPE html>
+
+<%
+    Response.CacheControl = "No-Cache"
+    Response.AddHeader("Pragma", "No-Cache")
+    Response.Expires = 0
+ %>
+
+
+<html>
+<head id="Head1" runat="server">    
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>  
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+
+    <link rel="stylesheet" href="Resources/css/bootstrap.css"/> <!-- Bootstrap 3.3.7 -->  
+    <link rel="stylesheet" href="Resources/css/font-awesome.css"/> <!-- Font Awesome -->  
+    <link rel="stylesheet" href="Resources/css/ionicons.css"/> <!-- Ionicons -->  
+    <link rel="stylesheet" href="Resources/css/AdminLTE.css"/> <!-- Theme style -->  
+    <link rel="stylesheet" href="Resources/css/_all-skins.css"/> <!-- AdminLTE Skins. -->
+    <link rel="Stylesheet" type="text/css" href="Resources/css/Script.css" />
+    
+
+    <script type="text/JavaScript" src="Resources/js/agentapi.js"></script>
+
+    <script src="https://kit.fontawesome.com/7eea041f16.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        agentapi.AgentAppType = "<%=AgentApp.AgentAppType%>";
+        agentapi.WebAgentAuthToken = "<%=AgentApp.WebAgentAuthToken%>";
+        agentapi.WebAgentServiceUrl = "<%=AgentApp.WebAgentServiceUrl%>";
+    </script>
+	
+    <script type="text/javascript">
+        document.oncontextmenu = function () {
+            return false;
+        };
+        document.onkeydown = function (event) {
+            event = event || window.event;
+            var doPrevent = false;
+
+            if (event.keyCode == 116                     /* F5 - Refresh */ ||
+               (event.keyCode == 82 && event.ctrlKey)    /* CTRL + R - Refresh */ ||
+                event.keyCode == 8                       /* Backspace - Navigate back */ ||
+               (event.keyCode == 37 && event.altKey)     /* ALT + Left Arrow - Navigate back */ ||
+               (event.keyCode == 121 && event.shiftKey)  /* SHIFT + F10 - Context menu */) {
+
+                var d = event.srcElement || event.target;
+
+                if (event.keyCode == 8 && ((d.tagName.toUpperCase() === 'INPUT' && (d.type.toUpperCase() === 'TEXT' || d.type.toUpperCase() === 'PASSWORD')) || d.tagName.toUpperCase() === 'TEXTAREA')) {
+                    doPrevent = d.readOnly || d.disabled;
+                }
+                else {
+                    doPrevent = true;
+                }
+            }
+            if (doPrevent) {
+                event.preventDefault();
+            }
+
+            return true;
+        };
+    </script>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+    
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>           
+        <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+        <script src="Resources/js/jquery.js"></script> <!-- jQuery 3 -->    
+
+        <script src="Resources/js/jquery-ui.js"></script> <!-- jQuery UI 1.11.4 -->    
+        <script>            $.widget.bridge('uibutton', $.ui.button);</script> <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+        <script src="Resources/js/bootstrap.js"></script> <!-- Bootstrap 3.3.7 -->
+        <script src="Resources/js/jquery.slimscroll.js"></script> <!-- Slimscroll -->
+        <script src="Resources/js/adminlte.min.js"></script> <!-- AdminLTE App -->
+        <script type="text/JavaScript" src="Resources/js/Script.js"></script> <!-- Weber -->
+
+    </form>
+    <asp:ContentPlaceHolder ID="FooterContent" runat="server"></asp:ContentPlaceHolder>
+
+    
+
+</body>
+
+</html>
+
+<script runat="server">
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If Not Gestion.IsLoaded Then
+            Message.ShowError("Las variables se han perdido por inactividad de la Sesión. Puede reiniciar el argumentario pulsando el boton ""Inicio""")
+        End If
+    End Sub
+    
+</script>

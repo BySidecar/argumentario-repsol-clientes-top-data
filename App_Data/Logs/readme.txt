@@ -1,0 +1,1 @@
+﻿Please don't remove this folder because is where the script log record will be saved.

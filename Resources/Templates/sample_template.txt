@@ -1,0 +1,58 @@
+﻿CUSTOMER
+IdSujeto = "#CLIENTE_ID_SUJETO#"
+IdOriginal = "#CLIENTE_ID_ORIGINAL#"
+Name = Nombre = "#CLIENTE_NOMBRE#"
+Surname = Apellido1 = "#CLIENTE_APELLIDO1#"
+Surname2 = Apellido2 = "#CLIENTE_APELLIDO2#"
+Adress = Direccion = "#CLIENTE_DIRECCION#"
+City = Poblacion = "#CLIENTE_POBLACION#"
+CodigoPostal = "#CLIENTE_CODIGO_POSTAL#"
+State = Provincia = "#CLIENTE_PROVINCIA#"
+Country = Pais = "#CLIENTE_PAIS#"
+Phone = Telefono = "#CLIENTE_TELEFONO#"
+Phone2 = Telefono2 = "#CLIENTE_TELEFONO2#"
+Fax = "#CLIENTE_FAX#"
+Email = "#CLIENTE_EMAIL#"
+Email2 = "#CLIENTE_EMAIL2#"
+Cellular = Movil = "#CLIENTE_MOVIL#"
+Cellular2 = Movil2 = "#CLIENTE_MOVIL2#"
+Born date = FechaNacimiento = "#CLIENTE_FECHA_NACIMIENTO#"
+Observations = Observaciones = "#CLIENTE_OBSERVACIONES#"
+ID = Dni = "#CLIENTE_DNI#"
+Full name = NombreCompleto = "#CLIENTE_NOMBRE_COMPLETO#"
+Company = Empresa = "#CLIENTE_EMPRESA#"
+Sex = Sexo = "#CLIENTE_SEXO#"
+Text1 = Texto1 = "#CLIENTE_TEXTO1#"
+Text2 = Texto2 = "#CLIENTE_TEXTO2#"
+Text3 = Texto3 = "#CLIENTE_TEXTO3#"
+Num1 = "#CLIENTE_NUM1#"
+Num2 = "#CLIENTE_NUM2#"
+Num3 = "#CLIENTE_NUM3#"
+
+ADDITIONAL DATA
+Twitter = "#CLIENTE_DATO_twitter#"
+Alias = "#CLIENTE_DATO_alias#"
+Error = "#CLIENTE_DATO_error#"
+
+CAMPAIGN
+Name = Nombre = "#CAMPANYA_NOMBRE#"
+Description = Descripcion = "#CAMPANYA_DESCRIPCION#"
+
+AGENT
+Name = Nombre = "#AGENTE_NOMBRE#"
+Surname = Apellido1 = "#AGENTE_APELLIDO1#"
+Surname2 = Apellido2 = "#AGENTE_APELLIDO2#"
+
+TRANSACTION
+Ani = "#TRANSACCION_ANI#"
+Dnis = "#TRANSACCION_DNIS#"
+Actual locator = LocalizadorActual = "#TRANSACCION_LOCALIZADOR_ACTUAL#"
+
+CONTACT
+From = Origen = "#CONTACTO_ORIGEN#"
+To = Destino = "#CONTACTO_DESTINO#"
+
+DOCUMENT
+Subject = "#DOCUMENT_SUBJECT#"
+
+

@@ -1,0 +1,71 @@
+body {
+    background-color: #ecf0f5;
+}
+
+blockquote {
+    font-size: 15px;
+}
+
+blockquote small {
+    font-size: 90%;
+}
+
+hover-bold:hover {
+    font-weight: bold;
+}
+
+header {
+    border-top: 6px solid #3c8dbc; /* #00c0ef */
+}
+
+.pagination {
+    margin: 0px !important;
+    display: inline !important;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.telefono:hover {
+    color: #3c8dbc;
+    font-size: 125%;
+    cursor: pointer;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.inlineblock {
+    display: inline-block;
+}
+
+.no-display {
+    display: none;
+}
+
+.checkbox-list label {
+    margin-bottom: 0px;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.ranking-grid td, .ranking-grid th {
+    padding: 10px 15px;    
+    text-align: center;
+}
+
+.ranking-grid tr:nth-child(even) {
+    background-color: #dddddd;
+}
+  
+.ranking-grid tr:nth-child(odd) {
+    background-color: #ffffff;
+}

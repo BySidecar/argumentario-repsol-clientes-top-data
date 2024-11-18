@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Developer.NET Solution File, Format Version 11.00
+Project("{09510B75-0F9D-4477-A331-098D422B6E00}") = "Bysidecar_Repsol_Clientes_Top Data", "Bysidecar_Repsol_Clientes_Top Data.evoscript", "{49A2D167-8883-414D-B64A-1B5B66E3C3B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49A2D167-8883-414D-B64A-1B5B66E3C3B0}.Release|x86.ActiveCfg = Release|x86
+		{49A2D167-8883-414D-B64A-1B5B66E3C3B0}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
