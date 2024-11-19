@@ -591,13 +591,13 @@
                                         <asp:ListItem Value="Necesidad energética" Text="Necesidad energética"></asp:ListItem>
                                         <asp:ListItem Value="Explicación o resolución de dudas" Text="Explicación o resolución de dudas"></asp:ListItem>
                                         <asp:ListItem Value="Ayuda en alguna gestión" Text="Ayuda en alguna gestión"></asp:ListItem>
-                                        <asp:ListItem Value="Otros" Text="Otros"></asp:ListItem>
                                     </asp:RadioButtonList>
                                 </div>
         
-                                <% If Me.Respuesta7a.Items.FindByValue("Otros").Selected Then %>
+                                <% If Not String.IsNullOrEmpty(Me.Respuesta7a.SelectedValue) Then %>
+                                <br />
                                 <div class="form-group">
-                                    <asp:TextBox ID="RespuestaOtros7a" runat="server" placeholder="Otros" CssClass="form-control" TextMode="SingleLine"></asp:TextBox>
+                                    <asp:TextBox ID="RespuestaOtros7a" runat="server" placeholder="Especificar" CssClass="form-control" TextMode="SingleLine"></asp:TextBox>
                                 </div>
                                 <% End If %>
             
