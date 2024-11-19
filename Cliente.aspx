@@ -1058,7 +1058,7 @@
     Private Sub AddItemsToDropDown1to10(ByVal dropdown As DropDownList)
         ' Genera los ítems del 1 al 10 y los agrega al DropDownList especificado
         dropdown.Items.Add(New ListItem("", ""))
-        For i As Integer = 1 To 10
+        For i As Integer = 0 To 10
             dropdown.Items.Add(New ListItem(i.ToString(), i.ToString()))
         Next
     End Sub
